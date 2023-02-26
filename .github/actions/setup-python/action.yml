@@ -1,0 +1,16 @@
+---
+name: Setup Python
+
+description: Setup Python
+
+runs:
+  using: composite
+  steps:
+    - name: Get current Python version
+      run: echo "PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
+      shell: bash
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
