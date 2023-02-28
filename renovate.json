@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>tqer39/renovate-config"
+    "tqer39/renovate-config"
   ]
 }
